@@ -7,50 +7,54 @@
     <title>Form</title>
 </head>
 <body>
-    <div class="background_image container">
-        <div class="logo">Logo</div>
-        <div class="artist">Photo by <a href="https://unsplash.com/@cosmovisuals">Laury Ricquebourg</a> on <a href="https://unsplash.com/">Unsplah</a></div>
+    <div class="content-left">
+        <div class="background_image container">
+            <div class="logo">Logo</div>
+            <div class="artist">Photo by <a href="https://unsplash.com/@cosmovisuals">Laury Ricquebourg</a> on <a href="https://unsplash.com/">Unsplah</a></div>
+        </div>
     </div>
     <div class="content-right container">
         <div class="content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque nisi voluptate ducimus libero eos iure commodi maiores placeat repellendus? Accusantium est, nobis exercitationem ad totam, corporis optio nemo sint, similique obcaecati laboriosam esse fugiat tenetur. Amet unde corporis ut autem blanditiis ducimus fugiat quaerat rem temporibus commodi recusandae eos, veniam eius nemo velit architecto inventore deserunt numquam quam exercitationem vero nisi cum quia. Ad tempora ab nihil esse quae totam sapiente, commodi voluptates expedita dolorem magni beatae quisquam! Nostrum assumenda soluta cumque repellat necessitatibus veniam ratione sed fugiat fuga eligendi iste, reiciendis quidem aliquam reprehenderit possimus placeat quae id. Corporis!</div>
-        <form class="form" action="" method="get">
-            <div class="form_layout">
-                 <div class="data">
-                    <div class="flex1">
-                        <div class="information">
-                            <label for="first_name">*First Name:</label>
-                            <input type="text" id="first_name" name="first_name" placeholder="John" required>
+        <div class="form">
+            <form action="" method="get">
+                <div class="form_layout">
+                     <div class="data">
+                        <div class="flex1">
+                            <div class="information">
+                                <label for="first_name">*First Name:</label>
+                                <input type="text" id="first_name" name="first_name" placeholder="John" required>
+                            </div>
+                            <div class="information">
+                                <label for="user_email">*Email:</label>
+                                <input type="email" id="user_email" name="user_email" placeholder="mymail@mail.com" required>
+                            </div>
+                            <div class="information">
+                                <label for="user_password">*Password:</label>
+                                <input type="password" id="user_password" name="user_password" minlength="8" maxlength="16" required>
+                            </div>
                         </div>
-                        <div>
-                            <label for="user_email">*Email:</label>
-                            <input type="email" id="user_email" name="user_email" placeholder="mymail@mail.com" required>
-                        </div>
-                        <div>
-                            <label for="user_password">*Password:</label>
-                            <input type="password" id="user_password" name="user_password" minlength="8" maxlength="16" required>
-                        </div>
-                    </div>
-                    <div class="flex1">
-                        <div>
-                            <label for="last_name">*Last Name:</label>
-                            <input type="text" id="last_name" name="last_name" placeholder="Smith" required>
-                        </div>
-                        <div>
-                            <label for="phone_number">*Phone Number:</label>
-                            <input type="tel" id="phone_number" name="phone_number" required>
-                        </div>
-                        <div>
-                            <label for="comfirm_password">* Comfirm Password:</label>
-                            <input type="password" id="comfirm_password" name="comfirm_password" minlength="8" maxlength="16" required>
+                        <div class="flex1">
+                            <div class="information">
+                                <label for="last_name">*Last Name:</label>
+                                <input type="text" id="last_name" name="last_name" placeholder="Smith" required>
+                            </div>
+                            <div class="information">
+                                <label for="phone_number">*Phone Number:</label>
+                                <input type="tel" id="phone_number" name="phone_number" required>
+                            </div>
+                            <div class="information">
+                                <label for="comfirm_password">*Comfirm Password:</label>
+                                <input type="password" id="comfirm_password" name="comfirm_password" minlength="8" maxlength="16" required>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="footer">
-                <button type="submit">Create Account</button>
-                <div>Already have an account? <a href="">Log in</a></div>
-            </div>
-        </form>
+                <div class="footer">
+                    <button type="submit">Create Account</button>
+                    <div class="already">Already have an account? <a href="">Log in</a></div>
+                </div>
+            </form>
+        </div>
     </div>
 </body>
 </html>
