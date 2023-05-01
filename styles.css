@@ -4,7 +4,8 @@
 
 @font-face {
     font-family: myFirstFont;
-    src: url(sansation_light.woff);
+    src: url(SansationLight.woff);
+    font-weight: bold;
   }
 
 * {
@@ -24,8 +25,9 @@ body {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    display: grid;
-    grid-template-rows: 80% 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     height: 100%;
 }
 
@@ -38,6 +40,7 @@ body {
 .artist {
     align-items: flex-end;
     color: antiquewhite;
+
 }
 
 .content-right {
@@ -116,14 +119,12 @@ form {
     width: 40%;
 }
 
-
-
 button{
     background-color: rgba(0, 0, 0, 0);
     color: burlywood;
     font-weight: 700;
     font-size: 1.2em;
-    border: 2px solid burlywood;
+    border: 2px solid rgb(222, 184, 135);
     border-radius: 5px;
     padding: 10px 40px;
     margin: 40px 50px;
@@ -147,6 +148,22 @@ a:hover{
     color: white;
 }
 
-.logo {
+.logo-container{
+    display: flex;
     font-family: myFirstFont;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40%;
+    background-color: rgba(0, 0, 0, 0.5)
+}
+
+.logo-image {
+   height: 20vh;
+   background-image: url(logo.png);
+   background-position: center;
+   background-size: cover;
+}
+
+.logo-text {
+    color: gainsboro;
 }
